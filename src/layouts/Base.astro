@@ -1,5 +1,9 @@
 ---
-const { title = 'YJE Brands — Brutalist Cosplay Talent Branding Agency', description = 'YJE Brands is the raw, real, rebellious cosplay talent branding collective.' } = Astro.props;
+import '../styles/tailwind.css';
+const {
+  title = 'YJE Brands — Brutalist Cosplay Talent Branding Agency',
+  description = 'YJE Brands is the raw, real, rebellious cosplay talent branding collective.'
+} = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -15,8 +19,8 @@ const { title = 'YJE Brands — Brutalist Cosplay Talent Branding Agency', descr
       rel="stylesheet"
     />
   </head>
-  <body class="font-sans">
-    <main class="min-h-screen bg-[#f5f5f5] text-black">
+  <body class="min-h-screen border-4 border-black font-sans">
+    <main class="min-h-screen">
       <slot />
     </main>
   </body>
