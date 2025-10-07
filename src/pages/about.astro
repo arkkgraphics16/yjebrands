@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Section from '../components/Section.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="About — YJE Brands" description="The story of YJE Brands, the brutalist cosplay talent agency.">
+  <div class="mx-auto grid max-w-[1200px] gap-6 py-6">
+    <Header />
+    <Section
+      kicker="Origin File"
+      title="Born backstage. Built for the front row."
+      headline="YJE Brands launched as a rogue collective turning cosplay craft into unstoppable cultural brands."
+    >
+      <div class="grid gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-7 space-y-4 text-base leading-relaxed">
+          <p>
+            We formed in the concrete corridors of conventions, where performers rewire reality with fabric and attitude. We saw
+            talent being reduced to photo ops, so we created a studio that fights for full creative autonomy and long-term brand
+            equity.
+          </p>
+          <p>
+            Today, our team architects campaigns, stage builds, and cross-platform narratives that keep audiences obsessing. We blend
+            brutalist aesthetics with market analytics to turn every drop into a signature moment.
+          </p>
+        </div>
+        <div class="lg:col-span-5 space-y-3 text-sm uppercase tracking-[0.3em]">
+          <div class="flex flex-col gap-2 border border-black bg-white px-6 py-6">
+            <span class="font-['Space_Grotesk'] text-xs tracking-[0.35em] text-black/60">Crew Leads</span>
+            <ul class="space-y-2">
+              <li>JUNO ETHER — Creative Director</li>
+              <li>BRIX HAVOC — Experiential Producer</li>
+              <li>LYNX ARCADIA — Partnerships</li>
+              <li>RHEA VORTEX — Visual Architect</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-2 border border-black bg-white px-6 py-6">
+            <span class="font-['Space_Grotesk'] text-xs tracking-[0.35em] text-black/60">Services</span>
+            <ul class="space-y-2">
+              <li>Brand Systems</li>
+              <li>Campaign Direction</li>
+              <li>Merch + Fabrication</li>
+              <li>Touring Activations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Section>
+    <Footer />
+  </div>
+</BaseLayout>

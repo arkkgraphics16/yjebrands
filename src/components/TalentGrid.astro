@@ -1,0 +1,65 @@
+---
+const talents = [
+  {
+    name: 'NEON VALKYRIE',
+    role: 'Synthwave Siren',
+    image:
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'IRON ROUGE',
+    role: 'Armor Artificer',
+    image:
+      'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'VOID LARK',
+    role: 'Galactic Vocalist',
+    image:
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'ELECTRIC KITSUNE',
+    role: 'Mythic Hacker',
+    image:
+      'https://images.unsplash.com/photo-1582719478250-8844c0c1c665?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'CRIMSON ORACLE',
+    role: 'Future Seer',
+    image:
+      'https://images.unsplash.com/photo-1521572163475-b9e0654b8e66?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    name: 'MERCURY NINJA',
+    role: 'Urban Shadow',
+    image:
+      'https://images.unsplash.com/photo-1559563362-c667ba5f5480?auto=format&fit=crop&w=1000&q=80'
+  }
+];
+---
+<section class="brutal-border border-black bg-[#f5f5f5] px-6 py-12 lg:px-12">
+  <header class="mb-10 flex flex-col gap-3">
+    <span class="text-xs uppercase tracking-[0.35em] text-black/60">Talent Index</span>
+    <h2 class="font-['Space_Grotesk'] text-4xl font-semibold leading-[0.95] md:text-5xl">Faces of the rebellion</h2>
+    <p class="max-w-2xl text-sm uppercase tracking-[0.3em] text-black/50">
+      Brutalist portraits. No gloss, all grit.
+    </p>
+  </header>
+  <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+    {talents.map((talent) => (
+      <figure class="group relative flex flex-col border border-black bg-white">
+        <img
+          src={talent.image}
+          alt={talent.name}
+          loading="lazy"
+          class="aspect-[4/5] w-full object-cover grayscale transition group-hover:grayscale-0"
+        />
+        <figcaption class="flex flex-col gap-1 border-t border-black bg-[#f5f5f5] px-4 py-4 uppercase">
+          <span class="font-['Space_Grotesk'] text-sm tracking-[0.28em]">{talent.name}</span>
+          <span class="text-xs tracking-[0.4em] text-black/50">{talent.role}</span>
+        </figcaption>
+      </figure>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import TalentGrid from '../components/TalentGrid.astro';
+import CTA from '../components/CTA.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout>
+  <div class="mx-auto grid max-w-[1200px] gap-6 py-6">
+    <Header />
+    <Hero />
+    <Section
+      kicker="Who We Are"
+      title="We build brands for cosplayers who dare."
+      headline="We sculpt raw identities, architect merch lines, and choreograph digital stunts that split the algorithm."
+    >
+      <div class="grid gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-6 space-y-4 text-base leading-relaxed">
+          <p>
+            We’re a squad of brand tacticians, visual agitators, and fandom strategists born from the convention floor. We bridge
+            underground aesthetics with commercial muscle so bold performers can own their universes.
+          </p>
+          <p>
+            Our playbook smashes together campaign ideation, sponsorship choreography, wardrobe fabrication, and platform audits. If
+            you’re ready to amplify the rebellion, we’re the comms tower.
+          </p>
+        </div>
+        <div class="lg:col-span-6 space-y-4 text-base leading-relaxed">
+          <ul class="space-y-3 text-sm uppercase tracking-[0.3em]">
+            <li class="flex items-center gap-3">
+              <span class="h-2 w-6 bg-[#e53935]"></span>
+              Identity Systems
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="h-2 w-6 bg-[#e53935]"></span>
+              Sponsorship Labs
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="h-2 w-6 bg-[#e53935]"></span>
+              Immersive Pop-Ups
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="h-2 w-6 bg-[#e53935]"></span>
+              Visual Direction
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Section>
+    <TalentGrid />
+    <CTA />
+    <Footer />
+  </div>
+</BaseLayout>
