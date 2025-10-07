@@ -22,18 +22,18 @@ const socials = [
   }
 ];
 ---
-<footer class="brutal-border border-black bg-[#f5f5f5] px-6 py-10 lg:px-12">
+<footer class="brutal-border border-black bg-[#f5f5f5] px-4 py-10 sm:px-6 lg:px-12">
   <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
-    <div class="lg:col-span-6 space-y-3">
-      <span class="font-['Space_Grotesk'] text-xs uppercase tracking-[0.35em] text-black/60">YJE BRANDS</span>
-      <p class="max-w-sm text-sm uppercase tracking-[0.3em] text-black/60">Brutalist cosplay talent branding agency.</p>
-      <p class="text-xs text-black/50">© {new Date().getFullYear()} YJE Brands. All resistance reserved.</p>
+    <div class="space-y-3 lg:col-span-6">
+      <span class="font-['Space_Grotesk'] text-xs uppercase tracking-[0.32em] text-black/60">YJE BRANDS</span>
+      <p class="max-w-sm text-xs uppercase tracking-[0.28em] text-black/60 sm:text-sm sm:tracking-[0.3em]">Brutalist cosplay talent branding agency.</p>
+      <p class="text-[0.7rem] text-black/50 sm:text-xs">© {new Date().getFullYear()} YJE Brands. All resistance reserved.</p>
     </div>
-    <div class="lg:col-span-6 flex flex-wrap items-start gap-4">
+    <div class="flex flex-wrap items-start gap-3 sm:gap-4 lg:col-span-6">
       {socials.map((social) => (
         <a
           href={social.href}
-          class="flex items-center gap-2 border border-black bg-white px-4 py-2 text-xs uppercase tracking-[0.3em] transition hover:bg-[#e53935] hover:text-white"
+          class="flex items-center gap-2 border border-black bg-white px-3 py-2 text-[0.65rem] uppercase tracking-[0.24em] transition hover:bg-[#e53935] hover:text-white sm:px-4 sm:text-xs sm:tracking-[0.3em]"
           target="_blank"
           rel="noreferrer"
         >

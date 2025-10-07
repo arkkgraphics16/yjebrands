@@ -1,14 +1,14 @@
 ---
 const { title, headline, kicker, class: className = '', children } = Astro.props;
 ---
-<section class={`brutal-border border-black bg-[#f5f5f5] px-6 py-12 lg:px-12 ${className}`}>
+<section class={`brutal-border border-black bg-[#f5f5f5] px-4 py-10 sm:px-6 sm:py-12 lg:px-12 ${className}`}>
   {title && (
     <header class="mb-8 flex flex-col gap-2">
       {kicker && <span class="text-xs uppercase tracking-[0.3em] text-black/60">{kicker}</span>}
-      <h2 class="font-['Space_Grotesk'] text-4xl font-semibold leading-[0.95] md:text-5xl">
+      <h2 class="font-['Space_Grotesk'] text-3xl font-semibold leading-[0.95] sm:text-4xl md:text-5xl">
         {title}
       </h2>
-      {headline && <p class="max-w-2xl text-base leading-relaxed text-black/80">{headline}</p>}
+      {headline && <p class="max-w-2xl text-sm leading-relaxed text-black/80 sm:text-base">{headline}</p>}
     </header>
   )}
   {children}
