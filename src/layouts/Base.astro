@@ -19,15 +19,9 @@ const {
       rel="stylesheet"
     />
   </head>
-  <body class="bg-cream text-ink">
-    <div class="mx-auto min-h-screen max-w-[1500px] px-4 py-6 sm:px-6 lg:px-10">
-      <div
-        class="flex min-h-[calc(100vh-3rem)] flex-col border-14 border-ink bg-cream-soft shadow-frame lg:min-h-[calc(100vh-4rem)]"
-      >
-        <main class="flex-1">
-          <slot />
-        </main>
-      </div>
-    </div>
+  <body class="min-h-screen bg-cream text-ink">
+    <main class="min-h-screen">
+      <slot />
+    </main>
   </body>
 </html>
