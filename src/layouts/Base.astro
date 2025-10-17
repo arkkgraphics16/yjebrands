@@ -15,13 +15,19 @@ const {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="min-h-screen border-4 border-black font-sans">
-    <main class="min-h-screen">
-      <slot />
-    </main>
+  <body class="bg-cream text-ink">
+    <div class="mx-auto min-h-screen max-w-[1500px] px-4 py-6 sm:px-6 lg:px-10">
+      <div
+        class="flex min-h-[calc(100vh-3rem)] flex-col border-14 border-ink bg-cream-soft shadow-frame lg:min-h-[calc(100vh-4rem)]"
+      >
+        <main class="flex-1">
+          <slot />
+        </main>
+      </div>
+    </div>
   </body>
 </html>

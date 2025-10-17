@@ -1,13 +1,72 @@
 ---
+const navLinks = [
+  { label: 'Home Base', href: '/' },
+  { label: 'Studio Profile', href: '/about' },
+  { label: 'Talent Roster', href: '#talent' },
+  { label: 'Contact', href: '#contact' }
+];
+
+const socials = [
+  { label: 'Instagram', href: 'https://instagram.com/yjebrands', handle: '@yjebrands' },
+  { label: 'Messenger', href: 'https://m.me/yjebrands', handle: 'Chat Live' },
+  { label: 'TikTok', href: 'https://tiktok.com/@yjebrands', handle: '@yjebrands' }
+];
 ---
-<header
-  class="brutal-border sticky top-0 z-20 flex flex-col gap-4 border-black bg-[#f5f5f5] px-4 py-4 uppercase tracking-[0.16em] sm:px-6 md:flex-row md:items-center md:justify-between md:tracking-[0.2em]"
->
-  <a href="/" class="font-['Space_Grotesk'] text-sm font-semibold tracking-[0.24em]">YJE BRANDS</a>
-  <nav class="flex flex-wrap items-center gap-3 text-[0.65rem] sm:text-xs sm:gap-5">
-    <a href="/" class="transition hover:text-[#e53935]">Home</a>
-    <a href="/about" class="transition hover:text-[#e53935]">About</a>
-    <a href="https://instagram.com" target="_blank" rel="noreferrer" class="transition hover:text-[#e53935]">Instagram</a>
-    <a href="https://m.me/yjebrands" target="_blank" rel="noreferrer" class="transition hover:text-[#e53935]">Messenger</a>
+<header class="flex h-full flex-col gap-8 border border-ink bg-cream-soft p-6 sm:p-8">
+  <div class="space-y-2">
+    <a href="/" class="inline-flex text-xl font-display uppercase tracking-tightest text-ink">
+      YJE Brands
+    </a>
+    <p class="max-w-xs text-xs uppercase tracking-mega text-ink-muted">
+      Cosplay brand architecture studio crafting cult-classic identities.
+    </p>
+  </div>
+
+  <nav class="flex flex-col gap-3 text-sm font-medium uppercase tracking-mega">
+    {navLinks.map(({ href, label }) => (
+      <a
+        href={href}
+        class="group flex items-center gap-3 text-ink hover:text-accent"
+      >
+        <span class="h-2 w-10 shrink-0 bg-ink"></span>
+        <span class="group-hover:translate-x-1 transition-transform">{label}</span>
+      </a>
+    ))}
   </nav>
+
+  <div class="space-y-3">
+    <p class="text-xs uppercase tracking-mega text-ink-muted">Follow the signal</p>
+    <ul class="flex flex-col gap-2 text-sm uppercase tracking-mega">
+      {socials.map(({ href, label, handle }) => (
+        <li>
+          <a href={href} class="group flex items-center justify-between gap-4 text-ink hover:text-accent" target="_blank" rel="noreferrer">
+            <span class="flex items-center gap-3">
+              <span class="flex h-8 w-8 items-center justify-center rounded-full border border-ink text-xs font-semibold">{label[0]}</span>
+              {label}
+            </span>
+            <span class="text-[0.7rem] font-medium uppercase tracking-mega text-ink-muted group-hover:text-ink">{handle}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <a
+    href="https://m.me/yjebrands"
+    class="group relative overflow-hidden border border-ink bg-highlight px-6 py-6 text-left text-sm uppercase tracking-mega text-ink"
+  >
+    <span class="relative z-10 block font-display text-lg uppercase tracking-tightest">Get a Quote</span>
+    <span class="relative z-10 block text-[0.7rem] text-ink-muted">Instant Messenger consult</span>
+    <span
+      aria-hidden="true"
+      class="absolute inset-y-0 right-0 flex w-12 items-center justify-center border-l border-ink bg-ink text-cream transition-transform group-hover:translate-x-2"
+    >
+      ↗
+    </span>
+  </a>
+
+  <div class="mt-auto space-y-2 border-t border-dashed border-ink/40 pt-4 text-[0.7rem] uppercase tracking-mega text-ink-muted">
+    <p>Worldwide studio — Operating 24/7</p>
+    <p id="contact">hello@yjebrands.com</p>
+  </div>
 </header>

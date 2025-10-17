@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  @apply bg-gray-100 text-black;
+@layer base {
+  html {
+    @apply bg-cream text-ink font-sans antialiased;
+  }
+
+  body {
+    @apply min-h-screen bg-transparent text-base leading-relaxed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-ink;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
 }

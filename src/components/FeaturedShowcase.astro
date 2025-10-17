@@ -1,0 +1,43 @@
+---
+const features = [
+  {
+    title: 'Neon Valkyrie Arena',
+    detail: 'Immersive launch experience',
+    tag: 'Activation',
+    href: '/work/neon-valkyrie'
+  },
+  {
+    title: 'Supply Drop // Vol. 03',
+    detail: 'Merch capsule + AR filters',
+    tag: 'Collaboration',
+    href: '/work/supply-drop-03'
+  }
+];
+---
+<section class="flex flex-col gap-6 border border-ink bg-cream-soft p-6 sm:p-8">
+  <div class="flex items-center justify-between gap-4">
+    <div>
+      <span class="text-xs uppercase tracking-mega text-ink-muted">Featured</span>
+      <h2 class="font-display text-2xl uppercase tracking-tightest">Current Signals</h2>
+    </div>
+    <a href="/work" class="text-xs uppercase tracking-mega text-ink underline underline-offset-4 hover:text-accent">View All</a>
+  </div>
+  <div class="grid gap-5 sm:grid-cols-2">
+    {features.map(({ title, detail, tag, href }) => (
+      <a
+        href={href}
+        class="group flex h-full flex-col gap-3 border border-ink bg-cream px-5 py-6 text-left transition-transform hover:-translate-y-1"
+      >
+        <span class="text-[0.7rem] uppercase tracking-mega text-ink-muted">{tag}</span>
+        <span class="font-display text-xl uppercase tracking-tightest text-ink">{title}</span>
+        <span class="text-sm text-ink-soft">{detail}</span>
+        <span class="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-mega text-ink">
+          Enter Case
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-ink text-xs transition-colors group-hover:bg-ink group-hover:text-cream">
+            ↗
+          </span>
+        </span>
+      </a>
+    ))}
+  </div>
+</section>

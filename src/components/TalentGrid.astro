@@ -26,21 +26,21 @@ const talents = [
   }
 ];
 ---
-<section class="brutal-border border-black bg-[#f5f5f5] px-4 py-10 sm:px-6 sm:py-12 lg:px-12">
-  <header class="mb-10 flex flex-col gap-3">
-    <span class="text-xs uppercase tracking-[0.35em] text-black/60">Talent Index</span>
-    <h2 class="font-['Space_Grotesk'] text-3xl font-semibold leading-[0.95] sm:text-4xl md:text-5xl">Faces of the rebellion</h2>
-    <p class="max-w-2xl text-xs uppercase tracking-[0.25em] text-black/50 sm:text-sm sm:tracking-[0.3em]">
+<section id="talent" class="flex flex-col gap-10 border border-ink bg-cream-soft px-6 py-10 sm:px-8 lg:px-12">
+  <header class="flex flex-col gap-3">
+    <span class="text-xs uppercase tracking-mega text-ink-muted">Talent Index</span>
+    <h2 class="font-display text-3xl uppercase leading-[0.92] tracking-tightest sm:text-4xl lg:text-5xl">Faces of the rebellion</h2>
+    <p class="max-w-2xl text-xs uppercase tracking-mega text-ink-muted sm:text-sm">
       Brutalist portraits. No gloss, all grit.
     </p>
   </header>
   <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
     {talents.map((talent) => (
-      <figure class="group relative flex flex-col border border-black bg-white">
-        <div class="aspect-[4/5] w-full bg-[#e5e5e5]" aria-hidden="true"></div>
-        <figcaption class="flex flex-col gap-1 border-t border-black bg-[#f5f5f5] px-4 py-4 uppercase">
-          <span class="font-['Space_Grotesk'] text-xs tracking-[0.24em] sm:text-sm sm:tracking-[0.28em]">{talent.name}</span>
-          <span class="text-[0.65rem] tracking-[0.32em] text-black/50 sm:text-xs sm:tracking-[0.4em]">{talent.role}</span>
+      <figure class="group relative flex flex-col border border-ink bg-cream">
+        <div class="aspect-[4/5] w-full bg-highlight/40" aria-hidden="true"></div>
+        <figcaption class="flex flex-col gap-1 border-t border-ink bg-cream-soft px-4 py-4 uppercase">
+          <span class="font-display text-xs tracking-mega text-ink sm:text-sm">{talent.name}</span>
+          <span class="text-[0.65rem] tracking-mega text-ink-muted sm:text-xs">{talent.role}</span>
         </figcaption>
       </figure>
     ))}
