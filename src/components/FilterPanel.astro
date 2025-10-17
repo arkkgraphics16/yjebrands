@@ -1,0 +1,21 @@
+---
+const filters = ['All', 'Launch Strategy', 'Influencer', 'Live Shows', 'Merch', 'Digital'];
+---
+<section class="flex flex-col gap-5 border border-ink bg-cream-soft p-6 sm:p-8">
+  <div class="flex items-center justify-between gap-4">
+    <span class="text-xs uppercase tracking-mega text-ink-muted">Filter Work</span>
+    <button type="button" class="text-xs uppercase tracking-mega text-ink underline underline-offset-4 hover:text-accent">
+      Reset
+    </button>
+  </div>
+  <div class="flex flex-wrap gap-3">
+    {filters.map((filter, index) => (
+      <button
+        type="button"
+        class={`rounded-full border border-ink px-5 py-2 text-xs uppercase tracking-mega transition-colors ${index === 0 ? 'bg-ink text-cream' : 'text-ink hover:bg-ink hover:text-cream'}`}
+      >
+        {filter}
+      </button>
+    ))}
+  </div>
+</section>

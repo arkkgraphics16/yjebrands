@@ -1,0 +1,40 @@
+---
+const tabs = [
+  {
+    label: 'Studio',
+    description: 'Inside the war room and workshop.',
+    href: '/studio'
+  },
+  {
+    label: 'Stories',
+    description: 'Field notes from live activations.',
+    href: '/stories'
+  },
+  {
+    label: 'Supply',
+    description: 'Limited drops and collab kits.',
+    href: '/supply'
+  }
+];
+---
+<section class="flex h-full flex-col gap-5 border border-ink bg-cream-soft p-6 sm:p-8">
+  <header class="flex flex-col gap-2">
+    <span class="text-xs uppercase tracking-mega text-ink-muted">Explore</span>
+    <h2 class="font-display text-2xl uppercase tracking-tightest">Side Channels</h2>
+  </header>
+  <ul class="flex flex-col divide-y divide-dashed divide-ink/40">
+    {tabs.map(({ label, description, href }) => (
+      <li class="py-4 first:pt-0 last:pb-0">
+        <a href={href} class="group flex items-center justify-between gap-4 text-left text-sm uppercase tracking-mega text-ink">
+          <span class="flex flex-col gap-1">
+            <span class="font-display text-lg uppercase tracking-tightest">{label}</span>
+            <span class="text-[0.7rem] uppercase tracking-mega text-ink-muted">{description}</span>
+          </span>
+          <span class="flex h-10 w-10 items-center justify-center rounded-full border border-ink text-xs transition-transform group-hover:translate-x-1 group-hover:bg-ink group-hover:text-cream">
+            ↗
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>

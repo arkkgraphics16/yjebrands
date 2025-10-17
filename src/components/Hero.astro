@@ -1,22 +1,57 @@
 ---
+const highlightPhrases = ['Raw Visions', 'Real Alliances', 'Rebellious Worlds'];
 ---
-<section class="brutal-border border-black bg-[#f5f5f5] px-4 py-14 sm:px-6 sm:py-16 lg:px-12 lg:py-20">
-  <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12">
-    <div class="lg:col-span-8">
-      <h1 class="font-['Space_Grotesk'] text-4xl font-semibold leading-[0.85] tracking-[-0.02em] sm:text-5xl md:text-6xl lg:text-7xl">
-        RAW. REAL. REBELLIOUS.
-      </h1>
+<section class="flex flex-col gap-8 border border-ink bg-cream-soft px-6 py-10 sm:px-8 lg:px-12 lg:py-14">
+  <div class="flex flex-wrap items-center gap-4 text-[0.65rem] uppercase tracking-mega text-ink-muted">
+    <span class="flex items-center gap-2">
+      <span class="h-2 w-2 rounded-full bg-ink"></span>
+      Design
+    </span>
+    <span class="flex items-center gap-2">
+      <span class="h-2 w-2 rounded-full bg-accent"></span>
+      Branding
+    </span>
+    <span class="flex items-center gap-2">
+      <span class="h-2 w-2 rounded-full bg-highlight"></span>
+      Our Works
+    </span>
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-12 md:items-start">
+    <div class="md:col-span-7 space-y-5">
+      <p class="text-xs uppercase tracking-mega text-ink-muted">The next-gen cosplay branding collective</p>
+      <div class="grid gap-3 text-4xl font-display uppercase leading-[0.82] tracking-tightest sm:text-5xl lg:text-6xl">
+        {highlightPhrases.map((phrase) => (
+          <span class="border-b border-dashed border-ink/40 pb-1 last:border-none">{phrase}</span>
+        ))}
+      </div>
     </div>
-    <div class="lg:col-span-4 flex flex-col justify-end gap-5 text-sm leading-relaxed text-black/70 sm:text-base">
-      <p class="max-w-xl">
-        The next-gen cosplay branding collective. We build audacious platforms for creators who perform without filters.
+    <div class="flex flex-col gap-6 md:col-span-5">
+      <div class="flex items-center gap-5">
+        <span class="flex h-20 w-20 items-center justify-center rounded-full border-[6px] border-ink text-4xl font-display leading-none">
+          &amp;
+        </span>
+        <p class="max-w-xs text-xs uppercase tracking-mega text-ink-muted">
+          Amplifying performers who refuse the ordinary — we architect bold narratives that hijack the algorithm.
+        </p>
+      </div>
+      <p class="text-sm text-ink-soft">
+        We build campaign systems, sponsor playbooks, and visual universes that convert fandom energy into enduring brands.
       </p>
-      <a
-        href="https://m.me/yjebrands"
-        class="inline-flex w-full items-center justify-center gap-3 bg-[#e53935] px-6 py-3 font-['Space_Grotesk'] text-xs font-semibold uppercase tracking-[0.35em] text-white transition hover:bg-black sm:w-fit sm:text-sm"
-      >
-        Chat in Messenger
-      </a>
     </div>
+  </div>
+
+  <div class="flex flex-wrap items-center justify-between gap-4 border-t border-ink pt-6 text-xs uppercase tracking-mega text-ink-muted">
+    <button
+      type="button"
+      class="flex items-center gap-3 rounded-full border border-ink px-5 py-2 text-ink transition-colors hover:bg-ink hover:text-cream"
+    >
+      <span class="h-2 w-2 rounded-full bg-accent"></span>
+      Featured Works Slider
+    </button>
+    <span class="flex items-center gap-2 text-[0.7rem]">
+      Swipe to preview
+      <span class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-current text-xs">↔</span>
+    </span>
   </div>
 </section>
