@@ -14,26 +14,26 @@ const features = [
   }
 ];
 ---
-<section class="flex flex-col gap-6 border border-ink bg-brand-light p-6 sm:p-8">
+<section class="flex flex-col gap-8 border-[12px] border-ink bg-brand-light p-8 sm:p-12">
   <div class="flex items-center justify-between gap-4">
     <div>
-      <span class="text-xs uppercase tracking-mega text-ink-muted">Featured</span>
-      <h2 class="font-display text-2xl uppercase tracking-tightest">Current Signals</h2>
+      <span class="text-sm uppercase tracking-mega text-ink">Featured</span>
+      <h2 class="font-display text-4xl uppercase tracking-tightest">Current Signals</h2>
     </div>
-    <a href="/work" class="text-xs uppercase tracking-mega text-ink underline underline-offset-4 hover:text-brand">View All</a>
+    <a href="/work" class="text-sm uppercase tracking-mega text-ink underline underline-offset-8 hover:text-brand">View All</a>
   </div>
-  <div class="grid gap-5 sm:grid-cols-2">
+  <div class="grid gap-6 sm:grid-cols-2">
     {features.map(({ title, detail, tag, href }) => (
       <a
         href={href}
-        class="group flex h-full flex-col gap-3 border border-ink bg-white px-5 py-6 text-left transition-transform hover:-translate-y-1"
+        class="group flex h-full flex-col gap-4 border-[10px] border-ink bg-brand-light px-6 py-8 text-left transition-transform hover:-translate-y-1"
       >
-        <span class="text-[0.7rem] uppercase tracking-mega text-ink-muted">{tag}</span>
-        <span class="font-display text-xl uppercase tracking-tightest text-ink">{title}</span>
-        <span class="text-sm text-ink-soft">{detail}</span>
-        <span class="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-mega text-ink">
+        <span class="text-sm uppercase tracking-mega text-ink">{tag}</span>
+        <span class="font-display text-2xl uppercase tracking-tightest text-ink">{title}</span>
+        <span class="text-base text-ink">{detail}</span>
+        <span class="mt-auto inline-flex items-center gap-3 text-sm uppercase tracking-mega text-ink">
           Enter Case
-          <span class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-ink text-xs transition-colors group-hover:bg-ink group-hover:text-white">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full border-[6px] border-ink text-sm transition-colors group-hover:bg-ink group-hover:text-white">
             ↗
           </span>
         </span>

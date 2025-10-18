@@ -17,20 +17,20 @@ const tabs = [
   }
 ];
 ---
-<section class="flex h-full flex-col gap-5 border border-ink bg-brand-light p-6 sm:p-8">
+<section class="flex h-full flex-col gap-6 border-[12px] border-ink bg-brand-light p-8 sm:p-12">
   <header class="flex flex-col gap-2">
-    <span class="text-xs uppercase tracking-mega text-ink-muted">Explore</span>
-    <h2 class="font-display text-2xl uppercase tracking-tightest">Side Channels</h2>
+    <span class="text-sm uppercase tracking-mega text-ink">Explore</span>
+    <h2 class="font-display text-4xl uppercase tracking-tightest">Side Channels</h2>
   </header>
-  <ul class="flex flex-col divide-y divide-dashed divide-ink/40">
+  <ul class="flex flex-col divide-y-[12px] divide-ink">
     {tabs.map(({ label, description, href }) => (
-      <li class="py-4 first:pt-0 last:pb-0">
-        <a href={href} class="group flex items-center justify-between gap-4 text-left text-sm uppercase tracking-mega text-ink">
-          <span class="flex flex-col gap-1">
-            <span class="font-display text-lg uppercase tracking-tightest">{label}</span>
-            <span class="text-[0.7rem] uppercase tracking-mega text-ink-muted">{description}</span>
+      <li class="py-6 first:pt-0 last:pb-0">
+        <a href={href} class="group flex items-center justify-between gap-6 text-left text-base uppercase tracking-mega text-ink">
+          <span class="flex flex-col gap-2">
+            <span class="font-display text-2xl uppercase tracking-tightest">{label}</span>
+            <span class="text-sm uppercase tracking-mega text-ink">{description}</span>
           </span>
-          <span class="flex h-10 w-10 items-center justify-center rounded-full border border-ink text-xs transition-transform group-hover:translate-x-1 group-hover:bg-ink group-hover:text-white">
+          <span class="flex h-12 w-12 items-center justify-center rounded-full border-[6px] border-ink text-sm transition-transform group-hover:translate-x-1 group-hover:bg-ink group-hover:text-white">
             ↗
           </span>
         </a>

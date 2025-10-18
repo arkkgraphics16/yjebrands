@@ -11,15 +11,15 @@ import FilterPanel from '../components/FilterPanel.astro';
 import SideTabs from '../components/SideTabs.astro';
 ---
 <BaseLayout>
-  <div class="grid gap-6 px-4 py-6 sm:px-6 lg:px-10">
+  <div class="grid gap-0">
     <div
-      class="grid gap-6 lg:grid-cols-[260px_minmax(0,1fr)] lg:auto-rows-min xl:grid-cols-[300px_minmax(0,1fr)_300px] xl:gap-8"
+      class="grid gap-0 lg:grid-cols-[260px_minmax(0,1fr)] lg:auto-rows-min xl:grid-cols-[300px_minmax(0,1fr)_300px]"
     >
       <div class="lg:row-span-6">
         <Header />
       </div>
 
-      <div class="lg:col-start-2 xl:col-start-2">
+      <div class="lg:col-start-2 xl:col-start-2 xl:col-span-2">
         <Hero />
       </div>
 
@@ -42,8 +42,8 @@ import SideTabs from '../components/SideTabs.astro';
           headline="We sculpt raw identities, architect merch lines, and choreograph digital stunts that split the algorithm."
           class="h-full"
         >
-          <div class="grid gap-8 lg:grid-cols-2">
-            <div class="space-y-4 text-sm text-ink-soft">
+          <div class="grid gap-10 lg:grid-cols-2">
+            <div class="space-y-5 text-lg text-ink">
               <p>
                 We’re a squad of brand tacticians, visual agitators, and fandom strategists born from the convention floor. We
                 bridge underground aesthetics with commercial muscle so bold performers can own their universes.
@@ -53,8 +53,8 @@ import SideTabs from '../components/SideTabs.astro';
                 audits. If you’re ready to amplify the rebellion, we’re the comms tower.
               </p>
             </div>
-            <div class="space-y-4 text-sm text-ink-soft">
-              <ul class="space-y-3 text-xs uppercase tracking-mega">
+            <div class="space-y-5 text-lg text-ink">
+              <ul class="space-y-4 text-sm uppercase tracking-mega">
                 <li class="flex items-center gap-3">
                   <span class="h-2 w-6 bg-ink"></span>
                   Identity Systems
@@ -72,7 +72,7 @@ import SideTabs from '../components/SideTabs.astro';
                   Visual Direction
                 </li>
               </ul>
-              <div class="rounded border border-dashed border-ink/40 p-4 text-[0.7rem] uppercase tracking-mega text-ink-muted">
+              <div class="rounded border-[6px] border-ink p-6 text-sm uppercase tracking-mega text-ink">
                 Currently assembling: Riot Chorus world tour identities + companion merch drops.
               </div>
             </div>

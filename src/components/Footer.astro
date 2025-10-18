@@ -22,18 +22,18 @@ const socials = [
   }
 ];
 ---
-<footer class="flex flex-col gap-8 border border-ink bg-brand-light px-6 py-10 sm:px-8 lg:px-12">
+<footer class="flex flex-col gap-10 border-[12px] border-ink bg-brand-light px-8 py-14 sm:px-12 lg:px-16">
   <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
     <div class="space-y-3 lg:col-span-6">
-      <span class="font-display text-xs uppercase tracking-mega text-ink-muted">YJE BRANDS</span>
-      <p class="max-w-sm text-xs uppercase tracking-mega text-ink-muted sm:text-sm">Brutalist cosplay talent branding agency.</p>
-      <p class="text-[0.7rem] text-ink-muted sm:text-xs">© {new Date().getFullYear()} YJE Brands. All resistance reserved.</p>
+      <span class="font-display text-sm uppercase tracking-mega text-ink">YJE BRANDS</span>
+      <p class="max-w-sm text-sm uppercase tracking-mega text-ink sm:text-base">Brutalist cosplay talent branding agency.</p>
+      <p class="text-sm text-ink sm:text-base">© {new Date().getFullYear()} YJE Brands. All resistance reserved.</p>
     </div>
     <div class="flex flex-wrap items-start gap-3 sm:gap-4 lg:col-span-6">
       {socials.map((social) => (
         <a
           href={social.href}
-          class="flex items-center gap-2 border border-ink bg-white px-3 py-2 text-[0.65rem] uppercase tracking-mega text-ink transition-colors hover:bg-ink hover:text-white sm:px-4 sm:text-xs"
+          class="flex items-center gap-3 border-[10px] border-ink bg-brand-light px-4 py-3 text-sm uppercase tracking-mega text-ink transition-colors hover:bg-ink hover:text-white sm:px-5"
           target="_blank"
           rel="noreferrer"
         >
@@ -56,7 +56,7 @@ const socials = [
       ))}
     </div>
   </div>
-  <div class="text-[0.7rem] uppercase tracking-mega text-ink-muted">
+  <div class="text-sm uppercase tracking-mega text-ink">
     Orbiting Manila · Los Angeles · Neo Tokyo
   </div>
 </footer>

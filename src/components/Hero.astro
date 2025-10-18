@@ -1,8 +1,8 @@
 ---
 const highlightPhrases = ['Raw Visions', 'Real Alliances', 'Rebellious Worlds'];
 ---
-<section class="flex flex-col gap-8 border border-ink bg-brand-light px-6 py-10 sm:px-8 lg:px-12 lg:py-14">
-  <div class="flex flex-wrap items-center gap-4 text-[0.65rem] uppercase tracking-mega text-ink-muted">
+<section class="flex min-h-screen flex-col gap-12 border-[12px] border-ink bg-brand-light px-8 py-14 sm:px-12 lg:px-16 lg:py-20">
+  <div class="flex flex-wrap items-center gap-4 text-sm uppercase tracking-mega text-ink">
     <span class="flex items-center gap-2">
       <span class="h-2 w-2 rounded-full bg-ink"></span>
       Design
@@ -17,41 +17,41 @@ const highlightPhrases = ['Raw Visions', 'Real Alliances', 'Rebellious Worlds'];
     </span>
   </div>
 
-  <div class="grid gap-6 md:grid-cols-12 md:items-start">
-    <div class="md:col-span-7 space-y-5">
-      <p class="text-xs uppercase tracking-mega text-ink-muted">The next-gen cosplay branding collective</p>
-      <div class="grid gap-3 text-4xl font-display uppercase leading-[0.82] tracking-tightest sm:text-5xl lg:text-6xl">
+  <div class="grid gap-8 md:grid-cols-12 md:items-start">
+    <div class="space-y-6 md:col-span-7">
+      <p class="text-base uppercase tracking-mega text-ink">The next-gen cosplay branding collective</p>
+      <div class="grid gap-4 font-display text-5xl uppercase leading-[0.78] tracking-tightest sm:text-6xl lg:text-7xl">
         {highlightPhrases.map((phrase) => (
-          <span class="border-b border-dashed border-ink/40 pb-1 last:border-none">{phrase}</span>
+          <span class="border-b-[12px] border-ink pb-3 last:border-none">{phrase}</span>
         ))}
       </div>
     </div>
-    <div class="flex flex-col gap-6 md:col-span-5">
-      <div class="flex items-center gap-5">
-        <span class="flex h-20 w-20 items-center justify-center rounded-full border-[6px] border-ink text-4xl font-display leading-none">
+    <div class="flex flex-col gap-10 md:col-span-5">
+      <div class="flex items-center gap-6">
+        <span class="flex h-24 w-24 items-center justify-center rounded-full border-[10px] border-ink text-5xl font-display leading-none">
           &amp;
         </span>
-        <p class="max-w-xs text-xs uppercase tracking-mega text-ink-muted">
+        <p class="max-w-sm text-base uppercase tracking-mega text-ink">
           Amplifying performers who refuse the ordinary — we architect bold narratives that hijack the algorithm.
         </p>
       </div>
-      <p class="text-sm text-ink-soft">
+      <p class="text-lg text-ink">
         We build campaign systems, sponsor playbooks, and visual universes that convert fandom energy into enduring brands.
       </p>
     </div>
   </div>
 
-  <div class="flex flex-wrap items-center justify-between gap-4 border-t border-ink pt-6 text-xs uppercase tracking-mega text-ink-muted">
+  <div class="flex flex-wrap items-center justify-between gap-4 border-t-[12px] border-ink pt-6 text-sm uppercase tracking-mega text-ink">
     <button
       type="button"
-      class="flex items-center gap-3 rounded-full border border-ink px-5 py-2 text-ink transition-colors hover:bg-ink hover:text-white"
+      class="flex items-center gap-4 rounded-full border-[6px] border-ink px-6 py-3 text-base text-ink transition-colors hover:bg-ink hover:text-white"
     >
       <span class="h-2 w-2 rounded-full bg-brand"></span>
       Featured Works Slider
     </button>
-    <span class="flex items-center gap-2 text-[0.7rem]">
+    <span class="flex items-center gap-3 text-base">
       Swipe to preview
-      <span class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-current text-xs">↔</span>
+      <span class="inline-flex h-10 w-10 items-center justify-center rounded-full border-[6px] border-current text-sm">↔</span>
     </span>
   </div>
 </section>

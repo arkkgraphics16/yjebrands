@@ -1,15 +1,15 @@
 ---
 const { title, headline, kicker, class: className = '', children } = Astro.props;
 ---
-<section class={`flex flex-col gap-8 border border-ink bg-brand-light px-6 py-10 sm:px-8 lg:px-10 ${className}`}>
+<section class={`flex flex-col gap-12 border-[12px] border-ink bg-brand-light px-8 py-14 sm:px-12 lg:px-16 ${className}`}>
   {title && (
     <header class="flex flex-col gap-3">
-      {kicker && <span class="text-xs uppercase tracking-mega text-ink-muted">{kicker}</span>}
-      <h2 class="font-display text-3xl font-semibold uppercase leading-[0.9] tracking-tightest sm:text-4xl lg:text-5xl">
+      {kicker && <span class="text-sm uppercase tracking-mega text-ink">{kicker}</span>}
+      <h2 class="font-display text-4xl font-semibold uppercase leading-[0.88] tracking-tightest sm:text-5xl lg:text-6xl">
         {title}
       </h2>
-      {headline && <p class="max-w-2xl text-sm text-ink-soft sm:text-base">{headline}</p>}
+      {headline && <p class="max-w-2xl text-lg text-ink sm:text-xl">{headline}</p>}
     </header>
   )}
-  <div class="space-y-6 text-sm text-ink-soft sm:text-base">{children}</div>
+  <div class="space-y-8 text-lg text-ink sm:text-xl">{children}</div>
 </section>

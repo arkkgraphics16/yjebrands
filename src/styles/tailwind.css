@@ -4,11 +4,11 @@
 
 @layer base {
   html {
-    @apply bg-white text-ink font-sans antialiased;
+    @apply bg-brand-light text-ink font-sans antialiased;
   }
 
   body {
-    @apply min-h-screen bg-transparent text-base leading-relaxed;
+    @apply min-h-screen bg-brand-light text-base leading-relaxed;
   }
 
   h1,
