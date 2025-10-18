@@ -14,7 +14,7 @@ const features = [
   }
 ];
 ---
-<section class="flex flex-col gap-8 border-[12px] border-ink bg-brand-light p-8 sm:p-12">
+<section class="flex flex-col gap-8 border-[6px] border-ink bg-brand-light p-8 sm:p-12">
   <div class="flex items-center justify-between gap-4">
     <div>
       <span class="text-sm uppercase tracking-mega text-ink">Featured</span>
@@ -26,14 +26,14 @@ const features = [
     {features.map(({ title, detail, tag, href }) => (
       <a
         href={href}
-        class="group flex h-full flex-col gap-4 border-[10px] border-ink bg-brand-light px-6 py-8 text-left transition-transform hover:-translate-y-1"
+        class="group flex h-full flex-col gap-4 border-[5px] border-ink bg-brand-light px-6 py-8 text-left transition-transform hover:-translate-y-1"
       >
         <span class="text-sm uppercase tracking-mega text-ink">{tag}</span>
         <span class="font-display text-2xl uppercase tracking-tightest text-ink">{title}</span>
         <span class="text-base text-ink">{detail}</span>
         <span class="mt-auto inline-flex items-center gap-3 text-sm uppercase tracking-mega text-ink">
           Enter Case
-          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full border-[6px] border-ink text-sm transition-colors group-hover:bg-ink group-hover:text-white">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full border-[3px] border-ink text-sm transition-colors group-hover:bg-ink group-hover:text-white">
             ↗
           </span>
         </span>

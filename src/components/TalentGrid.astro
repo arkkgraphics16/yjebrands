@@ -26,7 +26,7 @@ const talents = [
   }
 ];
 ---
-<section id="talent" class="flex flex-col gap-12 border-[12px] border-ink bg-brand-light px-8 py-14 sm:px-12 lg:px-16">
+<section id="talent" class="flex flex-col gap-12 border-[6px] border-ink bg-brand-light px-8 py-14 sm:px-12 lg:px-16">
   <header class="flex flex-col gap-3">
     <span class="text-sm uppercase tracking-mega text-ink">Talent Index</span>
     <h2 class="font-display text-4xl uppercase leading-[0.88] tracking-tightest sm:text-5xl lg:text-6xl">Faces of the rebellion</h2>
@@ -36,9 +36,9 @@ const talents = [
   </header>
   <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
     {talents.map((talent) => (
-      <figure class="group relative flex flex-col border-[10px] border-ink bg-brand-light">
+      <figure class="group relative flex flex-col border-[5px] border-ink bg-brand-light">
         <div class="aspect-[4/5] w-full bg-brand/50" aria-hidden="true"></div>
-        <figcaption class="flex flex-col gap-2 border-t-[10px] border-ink bg-brand-light px-6 py-6 uppercase">
+        <figcaption class="flex flex-col gap-2 border-t-[5px] border-ink bg-brand-light px-6 py-6 uppercase">
           <span class="font-display text-base tracking-mega text-ink sm:text-lg">{talent.name}</span>
           <span class="text-sm tracking-mega text-ink sm:text-base">{talent.role}</span>
         </figcaption>

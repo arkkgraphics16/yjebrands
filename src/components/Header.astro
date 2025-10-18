@@ -7,12 +7,12 @@ const navLinks = [
 ];
 
 const socials = [
-  { label: 'Instagram', href: 'https://instagram.com/yjebrands', handle: '@yjebrands' },
+  { label: 'Instagram', href: 'https://instagram.com/yjebrands', handle: 'yjebrands' },
   { label: 'Messenger', href: 'https://m.me/yjebrands', handle: 'Chat Live' },
-  { label: 'TikTok', href: 'https://tiktok.com/@yjebrands', handle: '@yjebrands' }
+  { label: 'TikTok', href: 'https://tiktok.com/@yjebrands', handle: 'yjebrands' }
 ];
 ---
-<header class="flex h-full flex-col gap-10 border-[12px] border-ink bg-brand-light p-8 sm:p-10">
+<header class="flex h-full flex-col gap-10 border-[6px] border-ink bg-brand-light p-8 sm:p-10">
   <div class="space-y-2">
     <a href="/" class="inline-flex text-xl font-display uppercase tracking-tightest text-ink">
       YJE Brands
@@ -41,7 +41,7 @@ const socials = [
         <li>
           <a href={href} class="group flex items-center justify-between gap-4 text-ink hover:text-brand" target="_blank" rel="noreferrer">
             <span class="flex items-center gap-3">
-              <span class="flex h-8 w-8 items-center justify-center rounded-full border border-ink text-xs font-semibold">{label[0]}</span>
+      <span class="flex h-8 w-8 items-center justify-center rounded-full border border-ink text-xs font-semibold">{label[0]}</span>
               {label}
             </span>
             <span class="text-sm font-medium uppercase tracking-mega text-ink group-hover:text-ink">{handle}</span>
@@ -53,19 +53,15 @@ const socials = [
 
   <a
     href="https://m.me/yjebrands"
-    class="group relative overflow-hidden border-[12px] border-ink bg-brand px-8 py-8 text-left text-base uppercase tracking-mega text-ink"
+    class="group relative flex aspect-square w-full max-w-[120px] items-center justify-center rounded-full border-[6px] border-ink bg-brand text-ink transition-transform hover:-translate-y-0.5"
   >
-    <span class="relative z-10 block font-display text-2xl uppercase tracking-tightest">Get a Quote</span>
-    <span class="relative z-10 block text-sm text-ink">Instant Messenger consult</span>
-    <span
-      aria-hidden="true"
-      class="absolute inset-y-0 right-0 flex w-16 items-center justify-center border-l-[12px] border-ink bg-ink text-white transition-transform group-hover:translate-x-2"
-    >
-      ↗
+    <span class="sr-only">Chat in Messenger</span>
+    <span aria-hidden="true" class="text-4xl">
+      💬
     </span>
   </a>
 
-  <div class="mt-auto space-y-2 border-t-[12px] border-ink pt-6 text-sm uppercase tracking-mega text-ink">
+  <div class="mt-auto space-y-2 border-t-[6px] border-ink pt-6 text-sm uppercase tracking-mega text-ink">
     <p>Worldwide studio — Operating 24/7</p>
     <p id="contact">hello@yjebrands.com</p>
   </div>
