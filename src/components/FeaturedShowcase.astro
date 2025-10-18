@@ -14,7 +14,7 @@ const features = [
   }
 ];
 ---
-<section class="flex flex-col gap-8 border-[6px] border-ink bg-brand-light p-8 sm:p-12">
+<section class="flex h-full flex-col gap-8 border-[6px] border-ink bg-brand-light p-8 sm:p-12">
   <div class="flex items-center justify-between gap-4">
     <div>
       <span class="text-sm uppercase tracking-mega text-ink">Featured</span>
@@ -22,7 +22,7 @@ const features = [
     </div>
     <a href="/work" class="text-sm uppercase tracking-mega text-ink underline underline-offset-8 hover:text-brand">View All</a>
   </div>
-  <div class="grid gap-6 sm:grid-cols-2">
+  <div class="grid flex-1 content-start gap-6 sm:grid-cols-2">
     {features.map(({ title, detail, tag, href }) => (
       <a
         href={href}
