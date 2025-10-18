@@ -12,21 +12,21 @@ const socials = [
   { label: 'TikTok', href: 'https://tiktok.com/@yjebrands', handle: '@yjebrands' }
 ];
 ---
-<header class="flex h-full flex-col gap-8 border border-ink bg-brand-light p-6 sm:p-8">
+<header class="flex h-full flex-col gap-10 border-[12px] border-ink bg-brand-light p-8 sm:p-10">
   <div class="space-y-2">
     <a href="/" class="inline-flex text-xl font-display uppercase tracking-tightest text-ink">
       YJE Brands
     </a>
-    <p class="max-w-xs text-xs uppercase tracking-mega text-ink-muted">
+    <p class="max-w-sm text-sm uppercase tracking-mega text-ink">
       Cosplay brand architecture studio crafting cult-classic identities.
     </p>
   </div>
 
-  <nav class="flex flex-col gap-3 text-sm font-medium uppercase tracking-mega">
+  <nav class="flex flex-col gap-4 text-base font-medium uppercase tracking-mega">
     {navLinks.map(({ href, label }) => (
       <a
         href={href}
-        class="group flex items-center gap-3 text-ink hover:text-brand"
+        class="group flex items-center gap-4 text-ink hover:text-brand"
       >
         <span class="h-2 w-10 shrink-0 bg-ink"></span>
         <span class="group-hover:translate-x-1 transition-transform">{label}</span>
@@ -34,9 +34,9 @@ const socials = [
     ))}
   </nav>
 
-  <div class="space-y-3">
-    <p class="text-xs uppercase tracking-mega text-ink-muted">Follow the signal</p>
-    <ul class="flex flex-col gap-2 text-sm uppercase tracking-mega">
+  <div class="space-y-4">
+    <p class="text-sm uppercase tracking-mega text-ink">Follow the signal</p>
+    <ul class="flex flex-col gap-3 text-base uppercase tracking-mega">
       {socials.map(({ href, label, handle }) => (
         <li>
           <a href={href} class="group flex items-center justify-between gap-4 text-ink hover:text-brand" target="_blank" rel="noreferrer">
@@ -44,7 +44,7 @@ const socials = [
               <span class="flex h-8 w-8 items-center justify-center rounded-full border border-ink text-xs font-semibold">{label[0]}</span>
               {label}
             </span>
-            <span class="text-[0.7rem] font-medium uppercase tracking-mega text-ink-muted group-hover:text-ink">{handle}</span>
+            <span class="text-sm font-medium uppercase tracking-mega text-ink group-hover:text-ink">{handle}</span>
           </a>
         </li>
       ))}
@@ -53,19 +53,19 @@ const socials = [
 
   <a
     href="https://m.me/yjebrands"
-    class="group relative overflow-hidden border border-ink bg-brand px-6 py-6 text-left text-sm uppercase tracking-mega text-ink"
+    class="group relative overflow-hidden border-[12px] border-ink bg-brand px-8 py-8 text-left text-base uppercase tracking-mega text-ink"
   >
-    <span class="relative z-10 block font-display text-lg uppercase tracking-tightest">Get a Quote</span>
-    <span class="relative z-10 block text-[0.7rem] text-ink-muted">Instant Messenger consult</span>
+    <span class="relative z-10 block font-display text-2xl uppercase tracking-tightest">Get a Quote</span>
+    <span class="relative z-10 block text-sm text-ink">Instant Messenger consult</span>
     <span
       aria-hidden="true"
-      class="absolute inset-y-0 right-0 flex w-12 items-center justify-center border-l border-ink bg-ink text-white transition-transform group-hover:translate-x-2"
+      class="absolute inset-y-0 right-0 flex w-16 items-center justify-center border-l-[12px] border-ink bg-ink text-white transition-transform group-hover:translate-x-2"
     >
       ↗
     </span>
   </a>
 
-  <div class="mt-auto space-y-2 border-t border-dashed border-ink/40 pt-4 text-[0.7rem] uppercase tracking-mega text-ink-muted">
+  <div class="mt-auto space-y-2 border-t-[12px] border-ink pt-6 text-sm uppercase tracking-mega text-ink">
     <p>Worldwide studio — Operating 24/7</p>
     <p id="contact">hello@yjebrands.com</p>
   </div>
