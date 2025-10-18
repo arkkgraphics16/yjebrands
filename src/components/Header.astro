@@ -12,7 +12,7 @@ const socials = [
   { label: 'TikTok', href: 'https://tiktok.com/@yjebrands', handle: '@yjebrands' }
 ];
 ---
-<header class="flex h-full flex-col gap-8 border border-ink bg-cream-soft p-6 sm:p-8">
+<header class="flex h-full flex-col gap-8 border border-ink bg-brand-light p-6 sm:p-8">
   <div class="space-y-2">
     <a href="/" class="inline-flex text-xl font-display uppercase tracking-tightest text-ink">
       YJE Brands
@@ -26,7 +26,7 @@ const socials = [
     {navLinks.map(({ href, label }) => (
       <a
         href={href}
-        class="group flex items-center gap-3 text-ink hover:text-accent"
+        class="group flex items-center gap-3 text-ink hover:text-brand"
       >
         <span class="h-2 w-10 shrink-0 bg-ink"></span>
         <span class="group-hover:translate-x-1 transition-transform">{label}</span>
@@ -39,7 +39,7 @@ const socials = [
     <ul class="flex flex-col gap-2 text-sm uppercase tracking-mega">
       {socials.map(({ href, label, handle }) => (
         <li>
-          <a href={href} class="group flex items-center justify-between gap-4 text-ink hover:text-accent" target="_blank" rel="noreferrer">
+          <a href={href} class="group flex items-center justify-between gap-4 text-ink hover:text-brand" target="_blank" rel="noreferrer">
             <span class="flex items-center gap-3">
               <span class="flex h-8 w-8 items-center justify-center rounded-full border border-ink text-xs font-semibold">{label[0]}</span>
               {label}
@@ -53,13 +53,13 @@ const socials = [
 
   <a
     href="https://m.me/yjebrands"
-    class="group relative overflow-hidden border border-ink bg-highlight px-6 py-6 text-left text-sm uppercase tracking-mega text-ink"
+    class="group relative overflow-hidden border border-ink bg-brand px-6 py-6 text-left text-sm uppercase tracking-mega text-ink"
   >
     <span class="relative z-10 block font-display text-lg uppercase tracking-tightest">Get a Quote</span>
     <span class="relative z-10 block text-[0.7rem] text-ink-muted">Instant Messenger consult</span>
     <span
       aria-hidden="true"
-      class="absolute inset-y-0 right-0 flex w-12 items-center justify-center border-l border-ink bg-ink text-cream transition-transform group-hover:translate-x-2"
+      class="absolute inset-y-0 right-0 flex w-12 items-center justify-center border-l border-ink bg-ink text-white transition-transform group-hover:translate-x-2"
     >
       ↗
     </span>

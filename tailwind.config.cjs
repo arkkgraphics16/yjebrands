@@ -8,24 +8,15 @@ module.exports = {
         display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
-        cream: {
-          DEFAULT: '#fdf6ec',
-          soft: '#f8edda',
-          rich: '#f1e2c8',
+        brand: {
+          light: '#f7d4e1',
+          DEFAULT: '#d5698e',
+          dark: '#66193b',
         },
         ink: {
-          DEFAULT: '#19120d',
-          soft: '#352922',
-          muted: '#5a4b3f',
-        },
-        accent: {
-          DEFAULT: '#ff5a3d',
-          dark: '#d9492f',
-        },
-        highlight: {
-          DEFAULT: '#ffe761',
-          mint: '#c7f26c',
-          sky: '#a8c6ff',
+          DEFAULT: '#111111',
+          soft: '#3d3d3d',
+          muted: '#6b6b6b',
         },
       },
       letterSpacing: {

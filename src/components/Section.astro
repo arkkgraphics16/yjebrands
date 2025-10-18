@@ -1,7 +1,7 @@
 ---
 const { title, headline, kicker, class: className = '', children } = Astro.props;
 ---
-<section class={`flex flex-col gap-8 border border-ink bg-cream-soft px-6 py-10 sm:px-8 lg:px-10 ${className}`}>
+<section class={`flex flex-col gap-8 border border-ink bg-brand-light px-6 py-10 sm:px-8 lg:px-10 ${className}`}>
   {title && (
     <header class="flex flex-col gap-3">
       {kicker && <span class="text-xs uppercase tracking-mega text-ink-muted">{kicker}</span>}
